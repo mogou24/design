@@ -769,6 +769,9 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .project .main .info {
+    width: 100%;
+  }
   .project .main .square {
     width: 100%;
     overflow: hidden;
@@ -800,6 +803,12 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .project .middle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1114,7 +1123,6 @@ body {
 .two {
   right: -650px;
   top: -550px;
-  z-index: -10;
   opacity: .3;
   -webkit-animation-duration: 12s;
           animation-duration: 12s;
