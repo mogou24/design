@@ -1211,6 +1211,9 @@ body {
   .d-ss-none {
     display: none;
   }
+  .info {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 770px) {
