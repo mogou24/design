@@ -9,178 +9,161 @@
     <!-- jqurey -->
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 </head>
 <body>
 
-    <!-- header開始 -->
-    <div class="header">
-        <div class="container">
+    <!-- header -->
+
+    <header>
+        <div class="container" >
             <div class="logo">
-                <a href="index.html"><h1>YU RU</h1></a>
-                <h4>DESIGN PORTFOLIO</h4>
+                <h1><a href="index.html">YU RU</a></h1>
+                <p>DESIGN PORTFOLIO</p>
             </div>
+
+            <nav class="dropdown">
+                <a href="" class="navmenu"><i class="fas fa-bars"></i></a>
+                <ul class="hovermenu">
+                    <li><a href="project.html">GRAPHIC DESIGN</a></li>
+                    <li><a href="web.html">WEB DESIGN</a></li>
+                    <li><a href="photo.html">PHOTOGRAPHY</a></li>
+                    <li><a href="illustration.html">ILLUSTRATION</a></li>
+                </ul>
+            </nav>
             
-            <ul class="nav d-s-none">
-                <li><a href="about.html">ABOUT ME</a></li>
+            <ul class="nav">
                 <li><a href="project.html">GRAPHIC DESIGN</a></li>
                 <li><a href="web.html">WEB DESIGN</a></li>
                 <li><a href="photo.html">PHOTOGRAPHY</a></li>
                 <li><a href="illustration.html">ILLUSTRATION</a></li>
             </ul>
-
-            <ul class="nav nav-s d-l-none">
-                <li><a href="about.html">ABOUT ME</a></li>
-                <li class="navHover"><a href="#">Portfolio</a>
-                    <ul class="navMenu d-none">
-                        <li ><a href="project.html">GRAPHIC DESIGN</a></li>
-                        <li><a href="web.html">WEB DESIGN</a></li>
-                        <li><a href="photo.html">PHOTOGRAPHY</a></li>
-                        <li><a href="illustration.html">ILLUSTRATION</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="bgpicLeaf">
+            <img src="../image/index/leaf.svg" alt="">
         </div>
-        <div class="gif">
-            <div class="leaf  d-s-none">
-                <img src="image/index/kisspng-coffee-bean-coffee-belt-coffea-shadow-5af4450dbd4a10.8118081415259579017753.png" alt="">
-            </div>
-        </div>
-    </div>
+    </header>
 
+    <!-- first -->
 
-    <!-- 首頁大圖 -->
-
-    <div class="container">
-        <div class="banner">
-            <div class="dots swiper-container mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="image/index/me2.jpg" alt="YURU"></div>
-                  <div class="swiper-slide"><img src="image/index/me.jpg" alt="YURU"></div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-    
-            <div class="info">
-                <h2>Design life</h2>
-                <h4>NEVER EVER GIVE UP</h4>
-                <p>設計如同世界的多樣性 充滿變化
-                    <br>遇到的每一個不同的挑戰 如此令人著迷
-                    <br> 讓我在這條路上 繼續堅持                    
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- 我 -->
-    <div class="about d-s-none">
+    <section class="first">
         <div class="container">
-            <div class="pic">
-                <img src="image/index/me3.jpg" alt="">
+            <div class="main">
+                <div class="bs firstpic picme" data-0="transform: translatex(-100px)" data-500="transform: translatex(0px)">
+                    <div class="picS" >
+                        <img src="../image/index/index02.png" alt="">
+                    </div>
+                </div>
+                <div class="mainText">
+                    <h2>Hi! I'm Yuru</h2>
+                    <p class="text">我是育如，是一名視覺設計師，至今約有九年多的設計經驗，曾擔任震旦通訊及百貨寢具與餐飲品牌的視覺設計外，也曾於旅遊品牌及整合行銷公司擔任美術設計，經手過不同產業的設計專案，跨越平面印刷與數位媒體設計，擅長從商品的本身特性結合品牌形象，搭配自身的設計與插畫技能，呈現引人注目的視覺圖像。</p>
+                </div>
             </div>
-            <div class="info">
-                <h2>Katie</h2>
-                <p>1989.09.24<br>
-                    視覺設計、包裝設計、插畫<br>
-                    攝影、文案
-                </p> 
-                <ul><li>瑋氏傳播-視覺設計</li>
-                    <li>翰匠整合行銷-視覺設計</li>
-                    <li>紅豆食府-設計企劃</li>
-                    <li>BBL Premium-品牌設計</li>
-                    <li>盈達旅遊-視覺設計</li>
-                    <li>夏普震旦-平面設計</li>
-                </ul>
+
+            <div class="lineText" data-0="opacity: 0" data-800="opacity: 1">
+                <p>
+                    唯有細心孕育的種子 才能化為強韌的未來</p>
+            </div>
+
+            <div class="main">
+                <div class="mainText">
+                    <h2>SKILL</h2>
+                    <p >
+                        <i class="fas fa-pencil-ruler"> 視覺設計及印刷相關基本知識</i><br>
+                        <i class="fas fa-pencil-alt"> 插畫設計與動態視覺延伸製作</i><br>
+                        <i class="fas fa-tv"> 網頁視覺設計與基礎切版</i><br>
+                        <i class="fas fa-photo-video"> 簡易商品攝影</i>
+                </div>
+                <div class="firstpic d-flexw" data-bottom-top="transform: translatex(200px)" data-center="transform: translatex(0px)">
+                    <div class="bs picBox box1"></div>
+                    <div class="bs picBox box2"></div>
+                    <div class="bs picBox box3"></div>
+                    <div class="bs picBox box4"></div>
+                    <div class="bs picBox box5"></div>
+                    <div class="bs picBox box6"></div>
+                    <div class="picS picS2" >
+                        <img src="../image/index/index02.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="bgpic" data-0="opacity: 0" data-2000="opacity: 1">
+            <img src="../image/index/30.svg" alt="">
+        </div>
+    </section>
 
-    <!-- 類別 -->
-    <div class="category">
-        <div class="container">
-            <div class="title">
-                <h1 class="d-s-none">CATEGORY</h1>
-                <p class="d-s-none">唯有細心孕育的種子 才能化為強韌的未來</p>            
-            </div>
-            <div class="project">
-                <div class="main">
-                    <a href="project.html" class="pic pG">
-                        <p>GRAPHIC DESIGN</p>
-                    </a>
-                    <a href="web.html" class="pic pW">
-                        <p>WEB DESIGN</p>
-                    </a>
-                    <a href="photo.html" class="pic pP">
-                        <p>PHOTOGRAPHY
-                        </p>
-                    </a>
-                    <a href="illustration.html" class="pic pI">
-                        <p>ILLUSTRATION</p>
-                    </a>
-                </div>
-    
-                <div class="cw">
-                    <h4>DESIGN IS MY LIFE</h4>
-                    <p>
-                        將腦內的思緒 化作實體<br>
-                        站在不同的角度再三思考 <br>
-                        設計也許是靈光一閃 但也是細心規劃與安排
+    <!-- sec -->
+    <section class="secTwo">
+        <div class="circle"></div>
+        <div class="bgpicLeaf">
+            <img src="../image/index/leaf2.svg" alt="">
+        </div>
+
+        <div class="container" data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">
+            <div class="secPic" ></div>
+            <div class="mainText" >
+                <div class="school">
+                    <h3>EDUCATION</h3>
+                    <p >
+                        <i class="fas fa-school">復興商工 | 美工科</i><br>
+                        <i class="fas fa-school">景文科技大學 | 視覺傳達設計系</i>
                     </p>
                 </div>
-                
-            </div>
-        </div>
-    </div>
-
-    <!-- 頁尾大圖 -->
-   <div class="secbanner">
-    <div class="container">
-        <div class="banner">
-            <div class="info">
-                <h2>Photo tour</h2>
-                <h4>MY LIFE ,WORK AND TOUR</h4>
-                <p>用相機 記錄著每一刻的精采 <br>
-                   刻劃著 屬於人生的五感之旅<br>
-                   也讓時光停留在片刻的 光陰裡
-
-                </p>
-            </div>
-
-            <div class="dots swiper-container mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="image/index/photo1.jpg" alt="YURU"></div>
-                  <div class="swiper-slide"><img src="image/index/photo2.jpg" alt="YURU"></div>
-                  <div class="swiper-slide"><img src="image/index/photo3.jpg" alt="YURU"></div>
-                  <div class="swiper-slide"><img src="image/index/photo4.jpg" alt="YURU"></div>
-                  <div class="swiper-slide"><img src="image/index/photo5.jpg" alt="YURU"></div>
-                  <div class="swiper-slide"><img src="image/index/photo6.jpg" alt="YURU"></div>
-                  <div class="swiper-slide"><img src="image/index/photo7.jpg" alt="YURU"></div>
-                  <div class="swiper-slide"><img src="image/index/photo8.jpg" alt="YURU"></div>
+                <div class="work">
+                    <h3>EXPERIENCES</h3>
+                    <p >
+                        <i class="fas fa-building">翰匠整合行銷 | 設計</i><br>
+                        <i class="fas fa-building">紅豆食府餐飲集團 | 設計企劃</i><br>
+                        <i class="fas fa-building">樂比舒眠 | 品牌設計</i><br>
+                        <i class="fas fa-building">盈達旅遊 | 視覺設計</i><br>
+                        <i class="fas fa-building">夏普震旦 | 視覺設計</i><br>
+                    </p>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+        </div>
+        </div>
+    </section>
+
+    <!-- third -->
+    <section class="third">
+        <div class="container">
+            <div class="picS" data-bottom-top="transform: translatex(-50px);opacity: 0" data-center="transform: translatex(0px);opacity: 1">
+                <img src="../image/index/index02.png" alt="">
+            </div>
+            <a href="project.html" class="thirdpic tp1 bs" data-bottom-top="transform: translatex(-50px);opacity: 0" data-center="transform: translatex(0px);opacity: 1">
+                <h2>GRAPHIC DESIGN</h2>
+            </a>
+            <a href="web.html" class="thirdpic tp2 bs" data-bottom-top="transform: translatex(50px);opacity: 0" data-center="transform: translatex(0px);opacity: 1">
+                <h2>WEB DESIGN</h2>
+            </a>
+            <a href="photo.html" class="thirdpic tp3 bs" data-bottom-top="transform: translatex(-50px);opacity: 0" data-center="transform: translatex(0px);opacity: 1">
+                <h2>PHOTOGRAPHY</h2>
+            </a>
+            <a href="illustration.html" class="thirdpic tp4 bs" data-bottom-top="transform: translatex(50px);opacity: 0" data-100-top="transform: translatex(0px);opacity: 1">
+                <h2>ILLUSTRATION</h2>
+            </a>
+
+
+            <div class="lineText" data-bottom-top="opacity: 0" data-center="opacity: 1">
+                <p>
+                    商業與設計的思維 交織出不一樣的風景 </p>
+            </div>
+
+            <div class="bgpicLeaf">
+                <img src="../image/index/leaf3.svg" alt="">
             </div>
         </div>
-    </div>
-   </div>
+    </section>
 
-
-    <!-- 頁尾 -->
-    <div class="footer">
-        <div class="container">  
-            <ul class="nav d-s-none">
-                <li><a href="about.html">ABOUT ME</a></li>
+    <footer>
+        <div class="container">
+            <ul class="nav">
                 <li><a href="project.html">GRAPHIC DESIGN</a></li>
                 <li><a href="web.html">WEB DESIGN</a></li>
                 <li><a href="photo.html">PHOTOGRAPHY</a></li>
                 <li><a href="illustration.html">ILLUSTRATION</a></li>
             </ul>
         </div>
-        <div class="info">
-            <p>YU RU DESIGN PORTFOLIO</p>
-        </div>
-    </div>
+    </footer>
 
 
 
@@ -188,6 +171,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
     <script src="js/all.js"></script>
 </body>
 </html>

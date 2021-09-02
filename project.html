@@ -9,59 +9,60 @@
     <!-- jqurey -->
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/swiper-bundle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 </head>
 <body>
-<!-- header開始 -->
-<div class="header">
-    <div class="container">
-        <div class="logo">
-            <a href="index.html"><h1>YU RU</h1></a>
-            <h4>DESIGN PORTFOLIO</h4>
-        </div>
-        
-        <ul class="nav d-s-none">
-            <li><a href="about.html">ABOUT ME</a></li>
-            <li><a href="project.html">GRAPHIC DESIGN</a></li>
-            <li><a href="web.html">WEB DESIGN</a></li>
-            <li><a href="photo.html">PHOTOGRAPHY</a></li>
-            <li><a href="illustration.html">ILLUSTRATION</a></li>
-        </ul>
 
-        <ul class="nav nav-s d-l-none">
-            <li><a href="about.html">ABOUT ME</a></li>
-            <li class="navHover"><a href="#">Portfolio</a>
-                <ul class="navMenu d-none">
-                    <li ><a href="project.html">GRAPHIC DESIGN</a></li>
+    <!-- header -->
+
+    <header>
+        <div class="container" >
+            <div class="logo">
+                <h1><a href="index.html">YU RU</a></h1>
+                <p>DESIGN PORTFOLIO</p>
+            </div>
+
+            <nav class="dropdown">
+                <a href="" class="navmenu"><i class="fas fa-bars"></i></a>
+                <ul class="hovermenu">
+                    <li><a href="project.html">GRAPHIC DESIGN</a></li>
                     <li><a href="web.html">WEB DESIGN</a></li>
                     <li><a href="photo.html">PHOTOGRAPHY</a></li>
                     <li><a href="illustration.html">ILLUSTRATION</a></li>
                 </ul>
-            </li>
-        </ul>
-    </div>
-</div>
+            </nav>
+            
+            <ul class="nav">
+                <li><a href="project.html">GRAPHIC DESIGN</a></li>
+                <li><a href="web.html">WEB DESIGN</a></li>
+                <li><a href="photo.html">PHOTOGRAPHY</a></li>
+                <li><a href="illustration.html">ILLUSTRATION</a></li>
+            </ul>
+        <div class="bgpicLeaf">
+            <img src="../image/index/leaf.svg" alt="">
+        </div>
+    </header>
 
+    <!-- first -->
 
-    <!-- 首頁大圖 -->
-
-    <div class="projectBn">
-        <div class="rectangle swiper-container mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="image/pr/gdBanner.jpg" alt="YURU"></div>
-              <div class="swiper-slide"><img src="image/pr/gdBanner2.jpg" alt="YURU"></div>
+    <section class="first firstBn">
+        <div class="projectBn">
+            <div class="rectangle swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="image/pr/gdBanner.jpg" alt="YURU"></div>
+                  <div class="swiper-slide"><img src="image/pr/gdBanner2.jpg" alt="YURU"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
-        </div>
-    </div>
+    </section>
 
-    <!-- 作品區 -->
-    <div class="project">
-        <div class="box container">
-            <div class=" main top">
+    <!-- sec -->
+    <section class="secTwo projectmain">
+        <div class="container containerM">
+            <div class="projectPic">
                 <div class="swiper-container square mySwiper2">
                     <div class="swiper-wrapper">
                       <ul class="swiper-slide">
@@ -141,7 +142,8 @@
                     <div class="swiper-button-next c-w"></div>
                     <div class="swiper-button-prev c-w"></div>
                 </div>
-    
+            </div>
+            <div class="projecText" data-bottom-top="transform: translatex(50px);opacity: 0" data-center="transform: translatex(0px);opacity: 1">
                 <div class="info">
                     <h1 class="">Graphic Design</h1>
                     <p class="">
@@ -150,16 +152,13 @@
                     </p>
                 </div>
             </div>
+        </div>      
+    </section>
 
-            <div class=" main middle">
-                <div class="info">
-                    <h1 class="">Catalogue</h1>
-                    <p class="">
-                        <span>旅遊|寢具品牌  書冊&夾報設計</span><br><br>
-                        透過不同主題的故事發想，從畫面的構思到部分文案的發想，透過與行銷及產品企劃的討論，將創意串連成完整的視覺故事呈現給觀賞者。
-                        
-                    </p>
-                </div>
+    <!-- third -->
+    <section class="secTwo projectmain">
+        <div class="container containerM colomn-r">
+            <div class="projectPic">
                 <div class="swiper-container square mySwiper2">
                     <div class="swiper-wrapper">
                       <ul class="swiper-slide">
@@ -184,115 +183,121 @@
                     <div class="swiper-button-next c-w"></div>
                     <div class="swiper-button-prev c-w"></div>
                 </div>
-             </div>
+            </div>
 
-             <div class=" main bottom">
-              <div class="swiper-container square mySwiper2">
-                  <div class="swiper-wrapper">
-                    <ul class="swiper-slide">
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd01.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd01.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd02.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd02.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd03.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd03.jpg" alt=""/></a></li>
-                    </ul>
-
-                    <ul class="swiper-slide">
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd04.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd04.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd05.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd05.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd06.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd06.jpg" alt=""/></a></li>
-                    </ul>
-
-                    <ul class="swiper-slide">
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd07.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd07.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd08.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd08.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd09.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd09.jpg" alt=""/></a></li>
-                    </ul>
-
-                    <ul class="swiper-slide">
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd10.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd10.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd11.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd11.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd12.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd12.jpg" alt=""/></a></li>
-                    </ul>
-
-                    <ul class="swiper-slide">
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd13.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd13.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd14.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd14.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd15.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd15.jpg" alt=""/></a></li>
-                    </ul>
-
-                    <ul class="swiper-slide">
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd16.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd16.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd17.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd17.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd18.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd18.jpg" alt=""/></a></li>
-                    </ul>
-
-                    <ul class="swiper-slide">
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd19.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd19.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd20.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd20.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd21.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd21.jpg" alt=""/></a></li>
-                    </ul>
-
-                    <ul class="swiper-slide">
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd22.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd22.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd23.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd23.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd24.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd24.jpg" alt=""/></a></li>
-                    </ul>
-
-                    <ul class="swiper-slide">
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd25.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd25.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd26.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd26.jpg" alt=""/></a></li>
-                      <li><a class="example-image-link pic" href="image/pr/smd/smd27.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd27.jpg" alt=""/></a></li>
-                    </ul>
-                  </div>
-                  <div class="swiper-button-next c-w"></div>
-                  <div class="swiper-button-prev c-w"></div>
-              </div>
-  
-              <div class="info ">
-                  <h1 class=" fs-sss">Social Media Design</h1>
+            <div class="projecText" data-bottom-top="transform: translatex(-50px);opacity: 0" data-center="transform: translatex(0px);opacity: 1">
+              <div class="info">
+                  <h1 class="">Catalogue</h1>
                   <p class="">
-                  <span>寢具|旅遊|餐飲  社群圖文設計</span><br><br>
-                  <p>搭配行銷活動，創作出多元的圖像視覺，結合時事與文案，來達到吸引消費者的目的。</p>
-                      
+                      <span>旅遊|寢具品牌  書冊&夾報設計</span><br><br>
+                      透過不同主題的故事發想，從畫面的構思到部分文案的發想，透過與行銷及產品企劃的討論，將創意串連成完整的視覺故事呈現給觀賞者。
                   </p>
               </div>
           </div>
         </div>
-        <div class="brownDots d-s-none">
-            <div class="box1 "></div>
-            <div class="box2"></div>
-            <div class="box3"></div>
-        </div>
-    </div>
+    </section>
 
-    <!-- 頁尾 -->
-    <div class="footer">
-        <div class="container">  
-            <ul class="nav d-s-none">
-                <li><a href="about.html">ABOUT ME</a></li>
+    <!-- four -->
+    <section class="secTwo projectmain">
+      <div class="container containerM">
+          <div class="projectPic">
+            <div class="swiper-container square mySwiper2">
+              <div class="swiper-wrapper">
+                <ul class="swiper-slide">
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd01.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd01.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd02.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd02.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd03.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd03.jpg" alt=""/></a></li>
+                </ul>
+
+                <ul class="swiper-slide">
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd04.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd04.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd05.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd05.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd06.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd06.jpg" alt=""/></a></li>
+                </ul>
+
+                <ul class="swiper-slide">
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd07.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd07.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd08.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd08.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd09.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd09.jpg" alt=""/></a></li>
+                </ul>
+
+                <ul class="swiper-slide">
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd10.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd10.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd11.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd11.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd12.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd12.jpg" alt=""/></a></li>
+                </ul>
+
+                <ul class="swiper-slide">
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd13.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd13.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd14.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd14.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd15.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd15.jpg" alt=""/></a></li>
+                </ul>
+
+                <ul class="swiper-slide">
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd16.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd16.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd17.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd17.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd18.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd18.jpg" alt=""/></a></li>
+                </ul>
+
+                <ul class="swiper-slide">
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd19.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd19.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd20.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd20.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd21.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd21.jpg" alt=""/></a></li>
+                </ul>
+
+                <ul class="swiper-slide">
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd22.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd22.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd23.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd23.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd24.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd24.jpg" alt=""/></a></li>
+                </ul>
+
+                <ul class="swiper-slide">
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd25.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd25.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd26.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd26.jpg" alt=""/></a></li>
+                  <li><a class="example-image-link pic" href="image/pr/smd/smd27.jpg" data-lightbox="example-set" ><img class="example-image" src="image/pr/smd/smd27.jpg" alt=""/></a></li>
+                </ul>
+              </div>
+              <div class="swiper-button-next c-w"></div>
+              <div class="swiper-button-prev c-w"></div>
+          </div>
+          </div>
+          <div class="projecText" data-bottom-top="transform: translatex(50px);opacity: 0" data-center="transform: translatex(0px);opacity: 1">
+            <div class="info ">
+              <h1 class=" fs-sss">Social Media Design</h1>
+              <p class="">
+              <span>寢具|旅遊|餐飲  社群圖文設計</span><br><br>
+              <p>搭配行銷活動，創作出多元的圖像視覺，結合時事與文案，來達到吸引消費者的目的。</p>
+                  
+              </p>
+          </div>
+          </div>
+      </div>
+
+      <div class="bgpicLeafP">
+        <img src="../image/index/leaf3.svg" alt="">
+    </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <ul class="nav">
                 <li><a href="project.html">GRAPHIC DESIGN</a></li>
                 <li><a href="web.html">WEB DESIGN</a></li>
                 <li><a href="photo.html">PHOTOGRAPHY</a></li>
                 <li><a href="illustration.html">ILLUSTRATION</a></li>
             </ul>
         </div>
-        <div class="info">
-            <p>YU RU DESIGN PORTFOLIO</p>
-        </div>
-    </div>
+    </footer>
 
-    <!-- gif -->
-    <div class="leaf  d-s-none">
-        <img src="image/leaf.png" alt="">
-    </div>
 
-    <div class="leaf two d-s-none">
-        <img src="image/leaf.png" alt="">
-    </div>
 
     <!-- jqurey -->
     <script src="js/jquery.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
     <script src="js/all.js"></script>
 </body>
 </html>
