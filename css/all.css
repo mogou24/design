@@ -167,14 +167,17 @@ body {
   background-color: #223752;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
-  height: 0px !important;
+  height: auto !important;
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 0;
+}
+
+element.style {
+  height: 3989px;
 }
 
 header {
