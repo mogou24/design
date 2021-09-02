@@ -40,3 +40,8 @@ wrapAround: true,
 
 //skrollr
 var s = skrollr.init();// 初始化
+
+//測試
+if (e.cancelable) {
+  e.preventDefault();
+}
