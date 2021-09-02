@@ -1,0 +1,37 @@
+//顏色
+$light: #FFF9F2;
+$dark: #312f2f;
+$primary:#DBAC52;
+$sec : #223752;
+$gray:#C4C4C4;
+
+//字級
+$fs:16px;
+$fs-m:18px;
+$fs-s:14px;
+$fs-title:72px;
+$fs-title-s:60px;
+$fs-title-ssss:32px;
+$fs-title-ss:52px;
+$fs-title-sss:48px;
+$fs-title:59px;
+
+//字形
+$cn:'Noto Sans TC',   sans-serif;
+$en:'Playfair Display',   sans-serif;
+
+//線
+$b-1:2px solid $gray; 
+
+//border
+$border-t: 1px solid $primary;
+$border-m: 4px solid $primary;
+$border-m-l: 4px solid $light;
+$border-m-d: 4px solid $sec;
+$border-f: 8px solid $primary;
+$border-f-l: 8px solid $light;
+
+//shadow
+$shadow-p:12px 17px 15px -5px rgba(0, 0, 0, 0.5);
+
+

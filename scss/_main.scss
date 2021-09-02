@@ -1,0 +1,475 @@
+
+//@mixin
+
+@mixin text-hidden {
+    display:block;
+    text-indent:101%; //首行縮排
+    overflow:hidden; //自動隱藏超出的文字或圖片
+    white-space:nowrap; //希望元素在第一排上面，沒有斷行
+}
+
+@mixin fz($color,$fs){
+    font-size:$fs;
+    line-height: $fs;
+    font-family: $cn;
+    color: $color;
+}
+
+@mixin bgc($color){
+    max-width: 100%;
+    background: ($color);
+}
+
+/* 共用 */
+
+//工具
+
+.d-none{
+    display: none
+}
+
+.d-flexw{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.colomn-r{
+    flex-direction: row-reverse;
+}
+
+.lineText{
+    border-top: $border-t;
+    border-bottom: $border-t;
+    text-align: center;
+    margin: 84px 0;
+    padding: 10px 0;
+    width: 640px;
+}
+
+
+//字型
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700&family=Playfair+Display:wght@400;500;700;900&display=swap');
+
+
+h1{
+    font-size: $fs-title;
+    line-height: $fs-title*1.2;
+    font-weight: 500;
+    color: $primary;
+}
+
+h2{
+    font-size: $fs-title-ss;
+    line-height: $fs-title-s*1.4;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+    color: $primary;
+    padding-bottom: 20px;
+}
+
+h3{
+    font-size: $fs-title-sss;
+    line-height: $fs-title-s*1.4;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+    color: $primary;
+}
+
+
+p{
+    font-size: $fs-s;
+    line-height: $fs-s*2;
+    font-weight: 100;
+    font-family: $cn;
+    letter-spacing: 0.5rem;
+    color: $primary;
+}
+
+.fs-sss{
+    font-size: $fs-title;
+}
+
+
+*{
+    text-decoration: none;
+    
+}
+
+body{
+    font-family:'Playfair Display', sans-serif, serif,'Noto Sans TC',   sans-serif;
+    background-color: $sec;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    height: 0px !important;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+
+
+
+//header
+
+header{
+    text-align: center;
+    color: $primary;
+    position: relative;
+    .bgpicLeaf{
+        position: absolute;
+        width: 45%;
+        top: -350px;
+        right: 100px;
+        transform: rotate(-30deg);
+        z-index: -100;
+        transform-origin: right top;
+        animation-name: leafan;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+    }
+    .logo{
+        margin: 60px 0;
+    }
+    .dropdown{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        a{
+            padding-bottom: 10px;
+            border-bottom: $border-m;
+            font-weight: 400;
+            font-size: $fs-m;
+            &:hover{
+                color: $light;
+                border-bottom: $border-m-l;
+            }
+        }
+    }
+    a{
+        color: $primary;
+        letter-spacing: 0.2rem;     
+    }
+}
+
+//first
+
+.bs{
+    border: $border-f;
+    box-shadow: $shadow-p;
+}
+
+.text{
+    letter-spacing: 0.1rem;
+    text-align: justify;
+}
+
+
+.pdb{
+    border-top: $border-t;
+    padding-top: 20px;
+}
+.itext{
+    margin: 10px 0;
+    color: $primary;
+    letter-spacing: 0.2rem;
+}
+
+.first{
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+    .lineText{
+        P{
+            word-break: break-all;
+        }
+     }
+    .bgpic{
+        position: absolute;
+        width: 60%;
+        bottom: -300px;
+        left: -100px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .main{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .picme{
+                height: 420px;
+                background: url(../image/index/index01.jpg);
+            }
+            .firstpic{
+                width: 58%;
+                position: relative;
+                .picS{
+                    width: 200px;
+                    height: auto;
+                    position: absolute;
+                    top:-50px;
+                    left: -100px;
+                }
+                .picS2{
+                    top: 250px;
+                    left: 450px;
+                }
+                .picBox{
+                    width: 30%;
+                    height: 180px;
+                    margin: 4px;
+                    border: $border-f-l;
+                    overflow: hidden;
+                }
+                .box1{
+                    background: url(../image/index/skill1.jpg);
+                    background-size: cover;
+                }
+                .box2{
+                    background: url(../image/index/skill2.jpg);
+                    background-size: cover;
+                }
+                .box3{
+                    background: url(../image/index/skill3.jpg);
+                    background-size: cover;
+                }
+                .box4{
+                    background: url(../image/index/skill4.jpg);
+                    background-size: cover;
+                }
+                .box5{
+                    background: url(../image/index/skill5.jpg);
+                    background-size: cover;
+                }
+                .box6{
+                    background: url(../image/index/skill6.jpg);
+                    background-size: cover;
+                }
+            }
+            .mainText{
+                width: 40%;
+                padding-left: 20px;
+                .fas{
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
+
+//secTwo
+.secTwo{
+    background-color: $primary;
+    width: 100%;
+    position: relative;
+    .circle{
+        position: absolute;
+        top: -100px;
+        left: 0px;
+        border-radius: 100%;
+        width: 500px;
+        height: 500px;
+        background-color: $primary;
+        z-index: -100;
+    }
+    .bgpicLeaf{
+        position: absolute;
+        width: 50%;
+        top: 50px;
+        left: -250px;
+        transform-origin: right top;
+        animation-name: leafan;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+    }
+    .container{
+        display: flex;
+        padding: 40px 0;
+        justify-content: space-between;
+        .mainText{
+            width: 40%;
+            h3,p{
+                color: $sec;
+            }
+            p{
+                margin-bottom: 40px;
+            }
+        }
+        .secPic{
+            width: 56%;
+            background: url(../image/index/me3.gif);
+            background-size: cover;
+            transform: translateY(-50px);
+        }
+    }
+}
+
+//third
+.third{
+    margin: 200px 0 100px 0;
+    .lineText{
+       position: relative;
+       left: 50%;
+       transform: translateX(-50%);
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        .bgpicLeaf{
+            position: absolute;
+            width: 40%;
+            bottom: -100px;
+            right: -200px;
+            z-index: 100;
+            transform-origin: bottom;
+            animation-name: leafan;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+        }
+        .picS{
+            position: absolute;
+            width: 20%;
+            top:-80px;
+            left: -100px;
+            z-index: 100;
+        }
+        .thirdpic{
+            width: 48%;
+            height: 500px;
+            margin: 20px 0 20px 0;
+            position: relative;
+            &:hover{
+                border: $border-f-l;
+                h2{
+                    color: $primary;
+                }
+            }
+            h2{
+                position: absolute;
+                color: white;
+                font-size: 40px;
+                white-space: nowrap;
+                bottom: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .tp1{
+            background: url(../image/index/gd.jpg);
+            background-size: cover;
+        }
+        .tp2{
+            background: url(../image/index/wb.jpg);
+            background-size: cover;
+        }
+        .tp3{
+            background: url(../image/index/II.jpg);
+            background-size: cover;
+        }
+        .tp4{
+            background: url(../image/index/photo.jpg);
+            background-size: cover;
+        }
+    }
+
+}
+
+//footer
+footer{
+    background-color: $primary;
+    width: 100%;
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        a{
+            display: block;
+            padding-bottom: 10px;
+            border-bottom: $border-m-d;
+            font-weight: 400;
+            font-size: $fs-m;
+            color: $sec;
+            &:hover{
+                color: $light;
+                border-bottom: $border-m-l;
+            }
+        }
+    }
+}
+
+
+//作品頁架構
+
+//共用架構
+
+.firstBn{
+    padding: 100px 0;
+}
+
+.projectmain{
+    margin: 50px 0;
+    background-color: transparent;
+    .container{
+        align-items: center;
+    }
+
+    .bgpicLeafP{
+        position: absolute;
+        width: 25%;
+        bottom: -50px;
+        left: -20px;
+        transform: rotate(-30deg);
+         transform-origin: right top;
+        animation-name: leafan;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        z-index: -100;
+    }
+}
+
+.projectPic{
+    width: 60%;
+    .swiper-wrapper{
+        .swiper-slide{
+            display: flex;
+            flex-direction: column;
+            li{
+                padding: 20px 0;
+            }
+        }
+    } 
+}
+
+.projecText{
+    width: 38%;
+}
+//動畫
+
+@keyframes  leafan {
+    0% {
+        -webkit-transform: rotate(3deg);
+    
+        -ms-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+    40% {
+        -webkit-transform: rotate(-6deg);
+        -ms-transform: rotate(-6deg);
+        transform: rotate(-6deg);
+    }
+  
+    100% {
+        -webkit-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+}

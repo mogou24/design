@@ -1,0 +1,356 @@
+//container
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 650px;
+    }
+    .lineText{
+        margin: 80px 0 40px 0;
+        word-break: break-all;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .container{
+        max-width: 300px;
+    }
+}
+
+
+//平板斷點
+@media screen and (max-width: 768px){
+    header{
+        .dropdown{
+            position: relative;
+            display: block;
+            .navmenu{
+                display: block;
+                width: 100%;
+                background-color: $primary;
+                color: $sec;
+                padding: 10px 0;
+                border-radius: 20px;
+            }
+            &:hover .hovermenu{
+                display: block;
+
+            }
+
+            .hovermenu{
+                display: none;
+                position: absolute;
+                width: 100%;
+                z-index: 500;
+                a{
+                    display: block;
+                    width: 100%;
+                    border-bottom: $border-t;
+                    padding: 20px;
+                    background-color: $sec;
+                    &:hover{
+                        border-bottom: $border-f;
+                        
+                    }
+                }
+            }
+
+        }
+
+        .nav{
+            display: none;
+        }
+
+        .bgpicLeaf{
+            width: 70%;
+            top: -250px;
+            left: -150px;
+
+        }
+    }
+
+
+    .first{
+        padding: 100px 0;
+        .container{
+            .main{
+                flex-direction: column;
+                .mainText{
+                    padding: 50px 20px 0 20px;
+                    width: 100%;
+                    text-align: center;
+                }
+                .firstpic{
+                    width: 100%;
+                    padding: 50px 0;
+                    .picS{
+                        width: 100px;
+                        top: 350px;
+                        left: 550px;
+                    }
+                }
+            }
+        }
+        .bgpic{
+            display: none;
+        }
+    }
+
+    .secTwo{
+        .circle{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 100%;
+            width: 80%;
+        }
+        .bgpicLeaf{
+            display: none;
+        }
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            .mainText{
+                margin: 0 auto;
+                width: 80%;
+                h3{
+                    text-align: center;
+                }
+                h3,p{
+                    color: $sec;
+                }
+                p{
+                    margin-bottom: 40px;
+                    width: 80%;
+                    transform: translateX(25%);
+                }
+            }
+            .secPic{
+                width: 100%;
+                height: 500px;
+                background: url(../image/index/me3.gif);
+                background-size: cover;
+                transform: translateY(0px);
+            }
+        }
+    }
+
+
+    .third{
+        .container{
+            .thirdpic{
+                width: 100%;
+                height: 600px;
+            }
+            .picS{
+                width: 30%;
+                top:-80px;
+                left: -100px;
+            }
+            .bgpicLeaf{
+                bottom: -100px;
+                right: 550px;
+            }
+        }
+    }
+
+
+    footer{
+        .nav{
+            display: none;
+        }
+        height: 20px;
+        width: 100%;
+    }
+
+    //project
+    .mySwiper{
+        height: 360px;
+    }
+
+    .containerM{
+        flex-direction: column;
+        .projectPic{
+            width: 80%;
+        }
+        .projecText{
+            width: 100%;
+            margin: 0px 20px;
+            text-align: center;
+        }
+    }
+
+    .containerMr{
+        flex-direction: column-reverse;
+    }
+}
+
+//手機斷點
+@media screen and (max-width: 360px){
+
+    header{
+        .dropdown{
+            position: relative;
+            .navmenu{
+                display: block;
+                width: 100%;
+                background-color: $primary;
+                color: $sec;
+                padding: 10px 0;
+                border-radius: 20px;
+            }
+            &:hover .hovermenu{
+                display: block;
+
+            }
+
+            .hovermenu{
+                display: none;
+                position: absolute;
+                width: 100%;
+                z-index: 500;
+                a{
+                    display: block;
+                    width: 100%;
+                    border-bottom: $border-t;
+                    padding: 20px;
+                    background-color: $sec;
+                    &:hover{
+                        border-bottom: $border-f;
+                        
+                    }
+                }
+            }
+
+        }
+
+        .nav{
+            display: none;
+        }
+
+        .bgpicLeaf{
+            width: 100%;
+            top: -200px;
+            left: -50px;
+
+        }
+    }
+
+
+    .first{
+        padding: 100px 0;
+        .container{
+            .main{
+                flex-direction: column;
+                .picme{
+                    height: 300px;
+                }
+                .mainText{
+                    padding: 20px 20px 0 20px;
+                    width: 100%;
+                    text-align: center;
+                    p{
+                        letter-spacing: 0.1rem;
+                        text-align: left;
+                    }
+                }
+                .d-flexw{
+                    display: none;
+                }
+            }
+        }
+        .bgpic{
+            display: block;
+            width: 100%;
+            bottom: -40px;
+            left: -50px;
+            transform: rotate(-50deg);
+        }
+    }
+
+    .secTwo{
+        .circle{
+            max-width: 300px;
+            max-height: 300px;
+        }
+        .container{
+            .mainText{
+                h3{
+                    text-align: center;
+                    font-size: $fs-title-ssss;
+                }
+                h3,p{
+                    color: $sec;
+                }
+                p{
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    margin-bottom: 40px;
+                    width: 100%;
+                    transform: translateX(0%);
+                }
+            }
+            .secPic{
+                width: 100%;
+                height: 500px;
+                transform: translateY(-50px);
+                background: url(../image/index/me3.gif);
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+    }
+
+
+    .third{
+        margin: 200px 0 50px 0;
+        .container{
+            .bgpicLeaf{
+                display: none;
+            }
+            .thirdpic{
+                width: 100%;
+                height: 300px;
+                h2{
+                    font-size: 20px !important;
+                }
+            }
+            .picS{
+                width: 40%;
+                top:-50px;
+                left: 0px;
+            }
+            .bgpicLeaf{
+                bottom: -100px;
+                right: 550px;
+            }
+        }
+    }
+
+
+    footer{
+        .nav{
+            display: none;
+        }
+        height: 20px;
+        width: 100%;
+    }
+
+    //project
+    .projectmain{
+        margin: 0 0;
+        h1{
+            font-size: $fs-title-sss;
+        }
+    }
+
+    .bgpicLeafP{
+        display: none;
+    }
+
+    //共用
+    
+    .pds{
+        padding: 100px 0 20px 0;
+    }
+}
