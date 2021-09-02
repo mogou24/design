@@ -246,6 +246,17 @@ header a {
   text-align: justify;
 }
 
+.pdb {
+  border-top: 1px solid #DBAC52;
+  padding-top: 20px;
+}
+
+.itext {
+  margin: 10px 0;
+  color: #DBAC52;
+  letter-spacing: 0.2rem;
+}
+
 .first {
   padding: 200px 0;
   position: relative;
