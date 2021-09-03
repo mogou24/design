@@ -167,7 +167,6 @@ body {
   background-color: #223752;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: auto !important;
 }
 
 .container {
@@ -660,16 +659,21 @@ footer .nav a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow: scroll !important;
+  }
   header .dropdown {
     position: relative;
     display: block;
+    z-index: 200;
+    margin: 20px 0;
   }
   header .dropdown .navmenu {
     display: block;
     width: 100%;
     background-color: #DBAC52;
     color: #223752;
-    padding: 10px 0;
+    padding: 20px 0;
     border-radius: 20px;
   }
   header .dropdown:hover .hovermenu {
@@ -825,9 +829,6 @@ footer .nav a:hover {
     color: #223752;
     padding: 10px 0;
     border-radius: 20px;
-  }
-  header .dropdown:hover .hovermenu {
-    display: block;
   }
   header .dropdown .hovermenu {
     display: none;
