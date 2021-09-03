@@ -42,6 +42,9 @@ wrapAround: true,
 var s = skrollr.init();// 初始化
 
 //測試
-if (e.cancelable) {
-  e.preventDefault();
-}
+
+$(document).ready(() => {
+  $('.navmenu').click(function(){
+    $('.hovermenu').css('display','block');  
+  })
+});
