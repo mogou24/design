@@ -39,6 +39,8 @@ wrapAround: true,
 });
 
 //skrollr
+
+document.body.id = "skrollr-body"
 var s = skrollr.init();// 初始化
 
 //測試
