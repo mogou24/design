@@ -41,7 +41,10 @@ wrapAround: true,
 //skrollr
 
 document.body.id = "skrollr-body"
-var s = skrollr.init();// 初始化
+var s = skrollr.init({forceHeight: false});// 初始化
+$(document).ready(function(){ 
+  $("#skrollr-body").css("height", "100%"); 
+  }); 
 
 //測試
 
